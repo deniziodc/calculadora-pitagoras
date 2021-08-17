@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Teorema de Pitágoras</title>
+</head>
+
+    <body>
+                
+        <section id="teorema">
+            <div class="container-fluid teorema text-center margin">
+                 
+                <h3 class="margin">Teorema de Pitágoras</h3>
+                <img src="img/pitagoras.jpg" class="rounded-circle" width="300">
+                <h4 class="margin">O teorema de Pitágoras é uma expressão que pode ser aplicada em qualquer triângulo retângulo (triângulo que tem um ângulo de 90°), e diz que o quadrado da hipotenusa (a) é igual à soma dos quadrados dos catetos (b,c).</h4>
+                <img src="img/teorema.png" width="290" height="220">
+                <h4 class="margin">a² = b² + c²</h4>
+                <h4 class="margin">Podemos utilizar esse teorema para facilitar o cálculo da diagonal de um quadrado e altura de um triângulo equilátero (triângulo com os lados iguais).</h4>
+
+            </div>
+        </section>
+
+        <section id="calculadora">
+            <div class="container-fluid text-center margin calculadora">
+                <h3 class="margin">Calcular</h3>
+                <div class="container">                    
+
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item border border-primary" role="presentation">
+                          <a class="nav-link active" onclick="limpaResultados()" id="home-tab" data-toggle="tab" href="#case01" role="tab" aria-controls="Cade a Hipotenusa" aria-selected="true">Cade a Hipotenusa</a>
+                        </li>
+                        <li class="nav-item border border-primary" role="presentation">
+                          <a class="nav-link" onclick="limpaResultados()" id="profile-tab" data-toggle="tab" href="#case02" role="tab" aria-controls="Apertem os cintos o cateto sumiu" aria-selected="false">Apertem os cintos o cateto sumiu !!</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content justify-content-center" id="myTabContent">
+                        <div class="tab-pane fade show active" id="case01" role="tabpanel" aria-labelledby="Cadê a Hipotenusa ?">
+                           
+                            <div class="formulario">
+                                <label for="catetoB">Cateto B</label>
+                                <input type="number" name="catetoB" id="bCateto"/>
+                            </div>
+
+                            <div class="formulario">
+                                <label for="catetoC">Cateto C </label>
+                                <input type="number" name="catetoC" id="cCateto"/>
+                            </div>                            
+                            
+                            <button class="btn btn-primary" onclick='calcHipotenusa("bCateto", "cCateto")'> Calcular </button>
+                        </div>
+                        <div class="tab-pane fade justify-content-end" id="case02" role="tabpanel" aria-labelledby="Apertem os cintos o cateto sumiu">
+                            <div class="formulario">
+                                <label for="hipotenusa">Hipotenusa </label>
+                                <input type="number" name="hipotenusa" id="hipotenusa"/>
+                            </div>
+                            <div class="formulario">
+                                <label for="cateto">Cateto</label>
+                                <input type="number" name="cateto" id="cateto"/>
+                            </div>
+                            <button class="btn btn-primary" onclick='calcCateto("hipotenusa", "cateto")'> Calcular </button>
+                        </div>
+                    </div>
+                    <div class="m2" id ="resultado"></div>
+                </div>
+            </div>
+        </section>
+
+        
+        </section>
+
+        <footer class="container-fluid text-center bg-footer margin">
+            <p>
+                Desenvolvido por Denizio Caires
+            </p>
+        </footer>
+        
+        <script src="scripts\main.js" rel="text/javascript"> </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+            
+    </body>
+
+</html>

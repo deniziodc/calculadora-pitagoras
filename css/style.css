@@ -1,0 +1,32 @@
+body {
+  font-family: 20px Arial, Helvetica, sans-serif;
+}
+
+.teorema {
+  background-color: rgb(124, 170, 209);
+  color: rgb(255, 255, 255);
+}
+
+.margin {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.calculadora {
+  background-color: rgb(124, 170, 209);
+  color: white;
+}
+
+.bg-footer {
+  background-color: #585858;
+  color: white;
+}
+
+.formulario {
+  max-width: 500px;
+  margin: 5px auto;
+}
+
+.formulario label {
+  width: 100px;
+}
